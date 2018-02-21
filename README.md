@@ -1,6 +1,6 @@
 ## Introduction
 
-Radioflow is a GPL online radio app for mobile devices based on Apache Cordova 3.6.
+Radioflow is a GPL online radio app for mobile devices based on Apache Cordova.
 
 Android and iOS are currently supported.
 
