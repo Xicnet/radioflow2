@@ -1,0 +1,6 @@
+#!/bin/bash
+
+DEVICE=$1
+STATION=$2
+
+adb uninstall com.xicnet.$STATION ; adb install ../clones/$STATION/platforms/android/app/build/outputs/apk/debug/app-debug.apk ; adb $DEVICE shell am start -a android.intent.action.MAIN -n com.xicnet.$STATION/com.xicnet.$STATION.MainActivity
