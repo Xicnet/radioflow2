@@ -37,10 +37,14 @@ TPL_LOADING_FONT_COLOR="fff"
 TPL_CONTENT_SERVER="http://rnadmin.xicnet.com"
 
 ### Install cordova-icon to auto-generate icons if not installed
-if [ `npm -g list cordova-icon ; echo $?` > 0 ]
+if  npm -g list cordova-icon
 then
+	echo "[II] cordova-icon already installed"
+else
 	npm -g install cordova-icon
 fi
+
+exit
 
 ### Stations configs
 if [ "$STATION" == "nacionalclasica" ]
